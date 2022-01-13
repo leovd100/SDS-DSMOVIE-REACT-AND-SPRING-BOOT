@@ -1,0 +1,113 @@
+
+.containerMovie{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    background:linear-gradient(-160deg, red,black, black);
+    border-bottom: 2px solid red;
+    
+}
+.backGround{
+    height: 65vh;
+    width: 110%;
+    -webkit-clip-path: polygon(50% 0%, 74% 17%, 89% 43%, 100% 70%, 100% 99%, 52% 100%, 20% 100%, 0 100%, 0% 35%, 0 0);
+    clip-path: polygon(50% 0%, 74% 17%, 89% 43%, 100% 70%, 100% 99%, 52% 100%, 20% 100%, 0 100%, 0% 35%, 0 0);
+}
+
+
+
+.blackBg{
+    
+    width: 100%;
+    position: relative;
+    background:linear-gradient(50deg, red,black, black);
+}
+
+
+.containerImagens{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.containerImagemHeroi{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.homemAranha{ 
+    width: 40vw;
+    filter: contrast(130%);
+    position: absolute;
+    bottom: 2px;
+    transition: width 1s ease-in-out;
+    filter: drop-shadow(1px 1px 3px rgb(255, 0, 0)) drop-shadow(1px 1px 5px rgb(255, 0, 0));
+    
+}
+
+.homemAranha:hover{
+    width: 45vw;
+}
+
+
+.drOctopus{
+    filter: drop-shadow(1px 1px 3px rgb(0, 0, 0)) drop-shadow(1px 1px 5px rgb(255, 0, 0));
+    position: absolute;
+    bottom: 0;
+    right: 26rem;
+}
+
+.doende{
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    filter: drop-shadow(1px 1px 3px rgb(0, 0, 0)) drop-shadow(1px 1px 5px rgb(166, 255, 0));
+ 
+ }
+
+/*
+.drOctopus{
+    filter: drop-shadow(1px 1px 3px rgb(0, 0, 0)) drop-shadow(1px 1px 5px rgb(255, 0, 0));
+    position: absolute;
+    bottom: 0;
+    right: 20rem;
+}
+
+.doende{
+   position: absolute;
+   bottom: 0;
+   right: 25%;
+   filter: drop-shadow(1px 1px 3px rgb(0, 0, 0)) drop-shadow(1px 1px 5px rgb(166, 255, 0));
+
+}
+
+.homemAranha:hover{
+    width: 45vw;
+}
+
+*/
+.contectMoviesVote h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+
+.contectMoviesVote{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.contectMoviesVote .container{
+    border-radius: 10px;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    background: rgb(234, 234, 235);
+}
+

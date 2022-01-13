@@ -1,4 +1,4 @@
-import { link } from 'fs';
+
 import { Link } from 'react-router-dom';
 import './styles.css'
 
@@ -37,7 +37,7 @@ export default function Form() {
                         <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
                     </div>
                 </form >
-                <Link to="/">
+                <Link to="/Listing">
                     <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
                 </Link>
 

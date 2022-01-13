@@ -1,0 +1,21 @@
+.cardwinCrown{
+    
+    
+    position: absolute;
+    width: 12rem;
+    box-sizing: border-box;
+    margin: 2rem 2rem 0 0;
+    right: 0;
+}
+
+.Crown{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Crown img{
+    width: 100%;
+}
+
