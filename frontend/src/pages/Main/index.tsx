@@ -8,6 +8,7 @@ import doende from 'assets/img/doende.png'
 import './styles.css'
 import WinCard from 'components/WinCard/winCard'
 import MovieCard from 'components/MovieCard'
+import { Link } from 'react-router-dom'
 export default function Main() {
     return (
         <>
@@ -45,7 +46,11 @@ export default function Main() {
                                 <MovieCard />
                             </div>
                         </div>
-
+                        <div className='fullList'>
+                            <Link to={`/Listing`}>
+                                <div className="btn btn-primary dsmovie-btn">Lista completa</div>
+                            </Link>
+                        </div>
                     </div>
                 </section>
             </main>

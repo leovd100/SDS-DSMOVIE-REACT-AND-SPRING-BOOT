@@ -111,3 +111,13 @@
     background: rgb(234, 234, 235);
 }
 
+.fullList{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+}
+.fullList a{
+   
+   
+}
