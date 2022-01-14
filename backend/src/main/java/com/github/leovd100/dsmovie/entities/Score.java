@@ -8,19 +8,20 @@ import javax.persistence.Table;
 @Table(name = "tb_score")
 public class Score {
 	
-	@EmbeddedId // id composto
+	@EmbeddedId 
 	private ScorePK id = new ScorePK();
+	
 	private Double value;
 	
 
 	public Score() {}
 
 	public void setMovie(Movie movie) {
-		getId().setMovie(movie);
+		id.setMovie(movie);
 	}
 	
 	public void setUser(User user) {
-		getId().setUser(user);
+		id.setUser(user);
 	}
 	
 	
