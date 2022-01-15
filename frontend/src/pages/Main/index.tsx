@@ -66,14 +66,17 @@ export default function Main() {
                     <h2>Vote no seu filme favorito</h2>
                     <div className="container">
                         <div className="row">
-                            {page.content.map(movie => 
-                            (
-                                <div key={movie.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-                                    
-                                    <MovieCard movie={movie} />
-                                </div>)
-                                
-                            )}
+                            {page.content.map(movie => {
+                                valueMovie += 1;
+                                if (valueMovie <= 4) {
+                                    return (
+                                        <div key={movie.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                                            <MovieCard movie={movie} />
+                                        </div>
+                                    )
+                                }
+
+                            })}
                         </div>
                         <div className='fullList'>
                             <Link to={`/Listing`}>
