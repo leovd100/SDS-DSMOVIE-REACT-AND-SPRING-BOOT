@@ -33,7 +33,7 @@ export default function Main() {
                     <h2>Vote no seu filme favorito</h2>
                     <div className="container">
                         <div className="row">
-                            <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                           {/*  <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
                                 <MovieCard />
                             </div>
                             <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
@@ -44,7 +44,7 @@ export default function Main() {
                             </div>
                             <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
                                 <MovieCard />
-                            </div>
+                            </div> */}
                         </div>
                         <div className='fullList'>
                             <Link to={`/Listing`}>
