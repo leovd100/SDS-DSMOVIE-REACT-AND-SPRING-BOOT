@@ -9,7 +9,40 @@ import './styles.css'
 import WinCard from 'components/WinCard/winCard'
 import MovieCard from 'components/MovieCard'
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+import { BASE_URL } from 'utils/requests'
+import { MoviePage } from 'types/movie'
 export default function Main() {
+
+    const [pageNumber, setPageNumber] = useState(0);
+
+    let valueMovie = 0;
+
+    const [page, setPage] = useState<MoviePage>({
+        content: [],
+        last: true,
+        totalPages: 0,
+        totalElements: 0,
+        size: 4,
+        number: 0,
+        first: true,
+        numberOfElements: 0,
+        empty: true
+    });
+
+    useEffect(() => {
+        axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=id`)
+            .then(resp => {
+                const data = resp.data as MoviePage;
+                setPage(data);
+            });
+    }, [pageNumber])
+
+
+
+
+
     return (
         <>
             <main>
@@ -33,18 +66,14 @@ export default function Main() {
                     <h2>Vote no seu filme favorito</h2>
                     <div className="container">
                         <div className="row">
-                           {/*  <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-                                <MovieCard />
-                            </div>
-                            <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-                                <MovieCard />
-                            </div>
-                            <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-                                <MovieCard />
-                            </div>
-                            <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-                                <MovieCard />
-                            </div> */}
+                            {page.content.map(movie => 
+                            (
+                                <div key={movie.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                                    
+                                    <MovieCard movie={movie} />
+                                </div>)
+                                
+                            )}
                         </div>
                         <div className='fullList'>
                             <Link to={`/Listing`}>
