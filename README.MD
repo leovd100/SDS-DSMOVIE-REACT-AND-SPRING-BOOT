@@ -8,6 +8,11 @@ Tecnologias
 *   h2
 *   PostgreSQL
 *   React.JS
+*   Typescritp
+*   JavaScript
+*   HTML
+*   Css
+*   BootStrap
 *   Heroku
 *   Netlyfy
 
