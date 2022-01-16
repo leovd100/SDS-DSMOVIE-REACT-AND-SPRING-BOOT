@@ -22,7 +22,7 @@ export default function Main() {
         return Math.floor(valor)
     }
 
-    let indexMovie = radom(0,12);
+    let indexMovie = radom(1,13);
 
     
 
