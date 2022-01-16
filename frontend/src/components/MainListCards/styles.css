@@ -1,0 +1,16 @@
+
+.fullList{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.cardhover{
+    transition: 0.6s ease-in-out;
+}
+
+.cardhover:hover{
+    transform: translateY(-15px);
+}

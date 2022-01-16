@@ -1,10 +1,6 @@
 .cardwinCrown{
-    
-    
-    position: absolute;
     width: 12rem;
     box-sizing: border-box;
-    margin: 2rem 2rem 0 0;
     right: 0;
 }
 
@@ -12,10 +8,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 .Crown img{
+    margin-bottom: 2rem;
     width: 100%;
 }
 
