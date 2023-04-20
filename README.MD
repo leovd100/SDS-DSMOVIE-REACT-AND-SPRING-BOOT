@@ -17,7 +17,6 @@ Tecnologias
 *   Netlyfy
 
 
-Link da aplicação https://sts-dsmoviedm.netlify.app/
 
 ---
 
